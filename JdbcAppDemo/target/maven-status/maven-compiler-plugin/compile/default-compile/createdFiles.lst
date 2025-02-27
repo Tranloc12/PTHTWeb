@@ -1,5 +1,6 @@
 com\tql\jdbcappdemo\JdbcAppDemo.class
 com\tql\pojo\Choice.class
 com\tql\jdbcappdemo\JdbcUtils.class
+com\tql\services\StatsServices.class
 com\tql\pojo\Question.class
 com\tql\services\QuestionServices.class
