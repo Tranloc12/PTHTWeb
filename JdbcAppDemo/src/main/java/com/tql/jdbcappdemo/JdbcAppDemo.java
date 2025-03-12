@@ -21,6 +21,7 @@ public class JdbcAppDemo {
     public static void main(String[] args) throws SQLException {
         StatsServices sr= new StatsServices();
         sr.countQuestionsByCate("").forEach(s -> System.err.printf("%d -%s: %d\n", s[0],s[1],s[2]));
+        System.err.println(sr.countWrongQuestions());
         
         
 //        Scanner sc= new Scanner(System.in);

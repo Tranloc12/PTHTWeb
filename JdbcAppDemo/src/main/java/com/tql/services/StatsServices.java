@@ -7,8 +7,10 @@ package com.tql.services;
 import com.tql.jdbcappdemo.JdbcUtils;
 import java.sql.CallableStatement;
 import java.sql.Connection;
+import java.sql.JDBCType;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Types;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,4 +34,15 @@ public class StatsServices {
         }
         return results;
     }
+    
+    public int countWrongQuestions() throws SQLException{
+        try (Connection conn = JdbcUtils.getConn()){
+            CallableStatement stm = conn.prepareCall("{ CALL count_wrong_questions(?) }");
+            stm.registerOutParameter(1, Types.INTEGER);
+            stm.execute();
+            
+         return stm.getInt(1);
+    }
+    }
+  
 }
