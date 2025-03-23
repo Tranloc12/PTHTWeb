@@ -1,0 +1,13 @@
+com\tql\pojo\Product.class
+com\tql\pojo\User.class
+com\tql\reposities\iml\StatsRepositoryImppl.class
+com\tql\pojo\Comment.class
+com\mycompany\hibernatedemo\HibernateDemo.class
+com\mycompany\hibernatedemo\HibernateUtils.class
+com\tql\pojo\OrderDetail.class
+com\tql\pojo\SaleOrder.class
+com\tql\pojo\Tag.class
+com\tql\reposities\iml\CategoryRepositoryImpl.class
+com\tql\pojo\Category.class
+com\tql\reposities\iml\ProductRepositoryImpl.class
+com\tql\pojo\ProdTag.class
